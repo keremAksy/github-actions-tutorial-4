@@ -36,7 +36,7 @@ jobs:
         run: npm install
 
       - name: Build the project
-        run: npm build
+        run: npm run build
 
       - name: Deploy the project
         run: echo "Building the project"
