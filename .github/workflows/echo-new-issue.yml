@@ -1,0 +1,10 @@
+name: Echo Event When New Issue Workflow
+
+on: issues
+
+jobs:
+  echo-event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo event details
+        run: echo "${{github.event}}"
